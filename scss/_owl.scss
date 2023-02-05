@@ -1,0 +1,63 @@
+
+/* OWL WRAPPER*/
+.owl-carousel .owl-nav button.owl-next, 
+.owl-carousel .owl-nav button.owl-prev
+{
+    position: absolute; 
+    top: 65px;
+    height: 20px;
+
+    &:hover img{
+        filter: invert(0.4);
+    }
+}
+
+.owl-carousel.right-dots .owl-prev.disabled,
+.owl-carousel.right-dots .owl-next.disabled{
+pointer-events: none;
+opacity: 0;
+}
+
+
+.owl-carousel .owl-dots{
+    margin-top: 60px;
+}
+
+.owl-carousel .owl-nav{
+    position: relative;
+}
+
+
+.owl-carousel .owl-nav button.owl-prev{
+    left: 0;
+}
+
+.owl-carousel .owl-nav button.owl-next{
+    right: 0;
+}
+
+.owl-dots {
+    text-align: center;
+}
+.owl-dots button.owl-dot.active span, 
+.owl-dots button.owl-dot:hover span {
+  background-color: #ececec; 
+}
+.owl-dots button.owl-dot span
+{
+    background-color: $link-color;
+    border-radius: 50%;
+    height: 7px;
+    width: 7px;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    transition: all 0.2s ease;
+}
+.owl-dots button.owl-dot{
+   border-radius: 50%;
+   height: 7px;
+   width: 7px;
+   position: relative;
+   margin-right: 5px;
+}

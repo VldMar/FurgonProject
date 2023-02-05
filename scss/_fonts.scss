@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "OpenSans";
+    font-style: normal;
+    font-weight: 400;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("OpenSans"),
+         url("../fonts/OpenSans-Regular.ttf") format("ttf"),
+         url("../fonts/OpenSans-Regular.woff2") format("woff2"),
+         url("../fonts/OpenSans-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "OpenSans";
+    font-style: bold;
+    font-weight: 700;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("OpenSans"),
+         url("../fonts/OpenSans-Bold.ttf") format("ttf"),
+         url("../fonts/OpenSans-Bold.woff2") format("woff2"),
+         url("../fonts/OpenSans-Bold.woff") format("woff");
+}  
+
+@font-face {
+    font-family: "OpenSans";
+    font-style: bolder;
+    font-weight: 900;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("OpenSans"),
+         url("../fonts/OpenSans-ExtraBold.ttf") format("ttf"),
+         url("../fonts/OpenSans-ExtraBold.woff2") format("woff2"),
+         url("../fonts/OpenSans-ExtraBold.woff") format("woff");
+}  
+
+@font-face {
+    font-family: "Tahoma";
+    font-style: normal;
+    font-weight: 500;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: 
+         url("../fonts/Tahoma.ttf") format("ttf"),
+         url("../fonts/Tahoma.woff2") format("woff2"),
+         url("../fonts/Tahoma.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Tahoma";
+    font-style: bold;
+    font-weight: 900;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: 
+         url("../fonts/Tahoma-Bold.ttf") format("ttf"),
+         url("../fonts/Tahoma-Bold.woff2") format("woff2"),
+         url("../fonts/Tahoma-Bold.woff") format("woff");
+} 
