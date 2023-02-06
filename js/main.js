@@ -2,6 +2,7 @@ $(document).ready(function()
 {
     InitSideNavigation();
     InitOwlCarousel();
+    InitCartRowSelection();
 });
 
 
@@ -38,4 +39,23 @@ function InitOwlCarousel()
             }
         }
     });
+}
+
+let lastCartSelRow;
+function InitCartRowSelection(){
+    $('.cart__table .row').click(function(){
+        if(lastCartSelRow == null)
+        {
+            $(this).toggleClass('selected');        
+            lastCartSelRow = $(this);
+            return;
+        }
+        lastCartSelRow.toggleClass('selected');          
+        $(this).find('input').prop('checked', false);
+
+        $(this).toggleClass('selected');     
+        $(this).find('input').prop('checked', true);
+           
+        lastCartSelRow = $(this);
+    })
 }
