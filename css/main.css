@@ -134,6 +134,7 @@ button:focus {
   margin-right: 5px;
 }
 
+/***** Общие блоки ******/
 h1 {
   font-size: 36px;
   color: #65666d;
@@ -216,6 +217,17 @@ a:hover {
 }
 .icon-item .link:hover {
   border-bottom: 1px solid;
+}
+
+input {
+  background-color: transparent;
+  border-bottom: 1px solid #b0b0b0;
+  font-size: 16px;
+  padding-bottom: 10px;
+  font-family: "Tahoma";
+}
+input:focus {
+  border-color: #2a558b;
 }
 
 /***** HEADER ******/
@@ -324,6 +336,7 @@ main {
   flex: 1 1 auto;
 }
 
+/***** Боковое меню ******/
 .side-nav {
   position: absolute;
   left: 0;
@@ -741,6 +754,7 @@ footer #map img {
   width: 100%;
 }
 
+/***** Контентная часть ******/
 .content-header {
   padding: 23px 0;
   background-color: #c5c6c6;
@@ -820,6 +834,7 @@ footer #map img {
   filter: invert(1);
 }
 
+/***** Каталог ******/
 .catalog {
   padding-top: 55px 0;
 }
@@ -853,6 +868,7 @@ footer #map img {
   background-color: #ededed;
 }
 
+/***** Корзина ******/
 .cart {
   margin-bottom: 50px;
   display: flex;
@@ -867,14 +883,11 @@ footer #map img {
   font-weight: 900;
   display: block;
 }
-.cart__table .tc-select {
-  width: 105px;
-}
 .cart__table .tc-photo {
-  width: 285px;
+  width: 240px;
 }
 .cart__table .tc-name {
-  width: 324px;
+  width: 325px;
 }
 .cart__table .tc-count {
   width: 210px;
@@ -884,7 +897,7 @@ footer #map img {
   margin: 0 17px;
 }
 .cart__table .tc-sum {
-  width: 125px;
+  width: 150px;
 }
 .cart__table .tc-clear {
   width: 154px;
@@ -894,7 +907,8 @@ footer #map img {
   display: flex;
   align-items: center;
 }
-.cart__table .minus, .cart__table .plus {
+.cart__table .minus,
+.cart__table .plus {
   width: 17px;
   height: 17px;
   border-radius: 50%;
@@ -904,34 +918,24 @@ footer #map img {
   display: inline-block;
   transition: all 0.2s ease;
 }
-.cart__table .minus:hover, .cart__table .plus:hover {
+.cart__table .minus:hover,
+.cart__table .plus:hover {
   cursor: pointer;
   background-color: #1f2a3a;
   color: #ededed;
-}
-.cart__table .clear {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background-color: #1f2a3a;
-  color: #ededed;
-  font-weight: 900;
-}
-.cart__table .clear:hover {
-  cursor: pointer;
-  background-color: #e6e6e6;
-  color: #1f2a3a;
 }
 .cart__table .headers {
   border-bottom: 1px solid #1f2a3a;
   padding-bottom: 5px;
   display: flex;
+  justify-content: space-between;
   font-weight: 900;
 }
-.cart__table .row__inner {
+.cart__table .row {
   padding: 35px 0;
   border-bottom: 1px solid #1f2a3a;
   display: flex;
+  justify-content: space-between;
 }
 .cart__table .row.selected {
   background-color: #f3f3f3;
@@ -943,6 +947,7 @@ footer #map img {
 }
 .cart__table .img img {
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -961,4 +966,194 @@ footer #map img {
 }
 .cart button.cart__order {
   padding-top: 0;
+}
+
+.clear {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #1f2a3a;
+  color: #ededed;
+  font-weight: 900;
+}
+.clear:hover {
+  cursor: pointer;
+  background-color: #e6e6e6;
+  color: #1f2a3a;
+}
+
+/***** Форма заказа ******/
+.order-form .form__title {
+  background-color: #ededed;
+  padding: 25px 0;
+}
+.order-form .form__title h2 {
+  font-weight: 900;
+  font-size: 18px;
+  color: #1f2a3a;
+}
+.order-form .form__table {
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+  display: block;
+  margin-bottom: 40px;
+  font-weight: 400;
+  border-collapse: collapse;
+  font-weight: 900;
+}
+.order-form .form__table .col1 {
+  width: 400px;
+}
+.order-form .form__table .col2 {
+  width: 150px;
+}
+.order-form .form__table .col3 {
+  width: 140px;
+}
+.order-form .form__table .col4 {
+  width: 40px;
+}
+.order-form .form__table th {
+  padding: 16px 0;
+  display: inline-block;
+  text-align: left;
+}
+.order-form .form__table td {
+  display: inline-block;
+  white-space: normal;
+  padding: 15px 0;
+  color: black;
+}
+.order-form .form__table td img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+.order-form .form__inputs {
+  padding-top: 45px;
+  padding-bottom: 65px;
+  color: #1f2a3a;
+}
+.order-form .form__inputs .input-item {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 14px;
+  width: 60%;
+}
+.order-form .form__inputs .input-item input {
+  flex: 1;
+  padding-bottom: 0;
+  font-size: 14px;
+}
+.order-form .form__inputs .input-item select {
+  width: 142px;
+  height: 26px;
+  font-size: 14px;
+  border: 1px solid #b0b0b0;
+  border-radius: 5px;
+}
+.order-form .form__inputs .input-item:not(:last-child) {
+  margin-bottom: 33px;
+}
+.order-form .form__inputs label {
+  font-weight: 900;
+  margin-right: 10px;
+}
+.order-form .form .order-info {
+  margin-left: auto;
+  text-align: right;
+}
+.order-form .form .order-info span {
+  font-weight: 900;
+}
+.order-form .form .order-btn {
+  width: 155px;
+  height: 40px;
+  font-size: 12px;
+}
+
+.form_radio {
+  margin-bottom: 10px;
+}
+.form_radio input[type=radio] {
+  display: none;
+}
+.form_radio label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 47px;
+  margin-right: 0;
+  line-height: 18px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.form_radio label::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background-color: #ededed;
+  border: 4px solid #ededed;
+}
+.form_radio input[type=radio]:checked + label:before {
+  background-color: #2b5a95;
+}
+.form_radio label:hover:before {
+  filter: brightness(90%);
+}
+.form_radio input[type=radio]:disabled + label:before {
+  filter: grayscale(100%);
+}
+.form_radio .description {
+  color: #a1a1a1;
+  font-size: 12px;
+  margin-left: 47px;
+  margin-top: 10px;
+}
+
+.input-file {
+  position: relative;
+  display: inline-block;
+}
+.input-file span.btn {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  width: 155px;
+  height: 40px;
+  font-size: 12px;
+  padding-top: 10px;
+}
+.input-file input[type=file] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+.input-file input[type=file]:focus + span.btn {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.input-file span.file-loaded {
+  margin-left: 5px;
+  color: #65666d;
+}
+.input-file span.file-loaded:hover {
+  cursor: none;
+  pointer-events: none;
 }
