@@ -49,13 +49,12 @@ h1 {
     &:hover {
         background-position: 100% 0;
         color: white;
+        cursor: pointer;
     }
 }
 
 .main-btn {
-    width: 180px;
-    height: 50px;
-    padding-top: 15px;
+    padding: 15px 20px;
 }
 
 a:hover {
@@ -79,6 +78,8 @@ a:hover {
 }
 
 .icon-item {
+    font-weight: 900;
+    font-family: 'Tahoma';
     .icon {
         display: inline-block;
         margin: 0 12px;
@@ -120,6 +121,13 @@ input {
     }
 }
 
+.social {
+
+    a:not(:last-child) {
+        margin-right: 15px;
+    }
+}
+
 
 /***** HEADER ******/
 .header {
@@ -142,17 +150,6 @@ input {
             align-items: center;
             justify-content: space-between;
         }
-
-        .social {
-            display: flex;
-            justify-content: space-between;
-
-            a:not(:last-child) {
-                margin-right: 15px;
-            }
-        }
-
-
 
         .shop-card {
             display: flex;
@@ -381,9 +378,10 @@ main {
 
         .info-text {
             flex: 30%;
-
+            
             .btn {
                 margin-top: 40px;
+                width: 185px;
             }
         }
 
@@ -427,6 +425,12 @@ main {
         }
 
         .submit {}
+    }
+
+    &__btn{
+        width: 180px;
+        height: 55px;
+
     }
 }
 
@@ -782,22 +786,38 @@ footer {
         font-size: 24px;
     }
 
-    .bread-crumbs {
-        display: flex;
-        flex-wrap: wrap;
+    .bread-crumbs{
         color: #525252;
-        font-size: 14px;
         margin-top: 10px;
+    }
+    
+}
+
+.bread-crumbs {        
+    font-size: 14px;
+
+    nav{
+        display: flex;
+        flex-wrap: wrap;        
+    
+        a:not(:last-child)::after {
+            content: '/\00a0';
+            display: inline-block;
+        }
 
         a:hover {
             text-decoration: underline;
             color: $gradient-to;
         }
+    }   
+}
 
-        a:not(:last-child)::after {
-            content: '/\00a0';
-            display: inline-block;
-        }
+section.bread-crumbs{
+    margin: 30px 0;
+    color: $gray;
+
+    a{
+        color: $dark-gray;
     }
 }
 
@@ -1028,6 +1048,118 @@ footer {
     }
 }
 
+
+/***** Страница заказа *****/
+.product{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__description{
+        max-width: 685px;
+
+        .text{
+            margin: 40px 0 20px 0;
+
+            p{
+                font-size: 14px;
+                color: $link-color;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__title{
+        font-size: 18px;
+        font-weight: 900;
+        color: $link-color;
+    }
+
+    &__settings{
+        width: 25%;
+        max-width: 360px;
+
+        .settings{
+            margin: 30px 0;
+        }
+        
+        .item{
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .prop{
+                font-weight: 900;
+                color: $link-color;
+                font-size: 12px;
+            }
+        }
+
+        select{
+            font-size: 12px;
+            padding-left: 15px;
+        }
+
+        .to-cart{
+            padding: 15px 20px;
+        }
+
+        .contacts{
+            margin: 30px 0;
+
+            .product__title{
+                margin-bottom: 30px;
+            }
+
+            .social{
+                margin-left: 12px;
+
+            }
+        }
+    }
+
+    &__sum{
+        margin-bottom: 30px;
+        font-weight: 900;
+        font-size: 16px;
+        span{
+            display: inline;
+        }
+    }
+
+    .icon-item{
+        margin-bottom: 25px;
+    }
+
+    .gallery{
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-template-rows: 150px 150px 150px;
+        grid-gap: 5px;
+
+        .img{
+            background-color: $gray;
+        }
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &__main {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 5;
+        }
+    }
+}
+
+
+
+
+
 /***** Форма заказа ******/
 .order-form {
     .form {
@@ -1101,14 +1233,6 @@ footer {
                     padding-bottom: 0;
                     font-size: 14px;
                 }
-
-                select{
-                    width: 142px;
-                    height: 26px;
-                    font-size: 14px;
-                    border: 1px solid #b0b0b0;
-                    border-radius: 5px;
-                }
             
             }
 
@@ -1138,7 +1262,6 @@ footer {
         }
     }
 }
-
 
 .form_radio {
     margin-bottom: 10px;
@@ -1224,3 +1347,44 @@ footer {
         }
     }
 }
+
+select{
+    width: 142px;
+    height: 26px;
+    font-size: 14px;
+    border: 1px solid #b0b0b0;
+    border-radius: 5px;
+}
+
+@media (max-width: 1340px){
+    .side-nav{
+        width: 0;
+
+        &__inner{
+            width: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .gallery {
+      display: grid;
+      grid-gap: 5px;
+      grid-template-columns: 100%;
+      grid-template-rows: 150px 150px 150px 150px 150px;
+      justify-content: center;
+
+      img{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      &__main{
+        grid-column-start: unset;
+        grid-column-end: unset;
+        grid-row-start: unset;
+        grid-row-end: unset;
+      }
+    }
+  }

@@ -10,6 +10,11 @@ function InitSideNavigation()
     const sideNavHandler = () => $('.side-nav').toggleClass("open");
     $('.side-nav__inner').mouseenter(sideNavHandler);
     $('.side-nav__inner').mouseleave(sideNavHandler);
+
+    $('#catalog').click(function(e){
+        e.preventDefault();
+        sideNavHandler();
+    });
 }
 
 
