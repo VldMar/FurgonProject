@@ -15,9 +15,13 @@
     <header class="header">
         <div class="header__top">
             <div class="container">
+                <button class="burger" id="mobile-burger">
+                    <span></span>
+                </button>
                 <a href="" class="logo">
                     <img src="img/logo.png" alt="logo">
                 </a>
+                
                 <div class="icon-item">
                     <img src="img/icons/time-png.png" alt="" class="icon">
                     <div class="info">
@@ -62,7 +66,7 @@
                 <nav class="nav">
                     <ul>
                         <li><a class="nav__link link" href="">О компании</a></li>
-                        <li><a class="nav__link link" href="" id="catalog">Каталог</a></li>
+                        <li id="catalog-item"><a class="nav__link link" href="" id="catalog">Каталог</a></li>
                         <li><a class="nav__link link" href="">Спецпредложения</a></li>
                         <li><a class="nav__link link" href="">Доставка и оплата</a></li>
                         <li><a class="nav__link link" href="">Новости</a></li>
@@ -71,11 +75,46 @@
                     </ul>
                 </nav>
             </div>
+            
+            <div class="contacts">
+                <div class="container contacts__inner">
+                    <div class="icon-item contacts__item">
+                        <img src="img/icons/time-png.png" alt="" class="icon">
+                        <div class="info">
+                            <p>Режим работы:</a>
+                            <p>С 8.00 до 18.00</p>
+                        </div>
+                    </div>
+                    <div class="icon-item contacts__item">
+                        <img src="img/icons/location-png.png" alt="" class="icon">
+                        <div class="info">
+                            <a href="" class="link">
+                                <span>г. Нижний Новгород</span>
+                                <span>ул. Вязниковская, д. 38, пом. 2</span> </a>
+                        </div>
+                    </div>
+                    <div class="icon-item contacts__item">
+                        <img src="img/icons/tel-png.png" alt="" class="icon">
+                        <div class="info">
+                            <a href="" class="link">+7 831 414-44-11</a>
+                            <a href="" class="link">+7 903 602-44-11</a>
+                        </div>
+                    </div>
+                    <div class="social contacts__item">
+                        <a href=""><img src="img/icons/whatsapp.png" alt="whatsapp-icon"></a>
+                        <a href=""><img src="img/icons/viber.png" alt="viber-icon"></a>
+                        <a href=""><img src="img/icons/telegram.png" alt="telegram-icon"></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main>    
         <div class="side-nav">
             <div class="side-nav__inner">
+                <button class="burger close" id="burger-close__catalog">
+                    <span></span>
+                </button>
                 <a class="side-nav__link" href="">
                     <img src="img/icons/left-icon-1.png" alt="">
                     <div class="text">
