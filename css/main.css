@@ -1432,7 +1432,8 @@ select {
     z-index: 10000;
   }
   .side-nav .burger.close {
-    margin: 40px 0;
+    margin-top: 40px !important;
+    margin-bottom: 40px;
   }
   .how-work__list .item .text {
     font-size: 12px;

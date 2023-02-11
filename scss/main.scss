@@ -1553,7 +1553,8 @@ select{
         top: 0;
         z-index: 10000;
         .burger.close{
-            margin: 40px 0;
+            margin-top: 40px !important;
+            margin-bottom: 40px;
         }
     }
 
