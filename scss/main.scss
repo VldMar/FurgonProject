@@ -1077,6 +1077,10 @@ section.bread-crumbs {
         &:hover {
             .img {
                 background-color: $gray;
+
+                img{
+                    filter: invert(1);
+                }
             }
         }
     }

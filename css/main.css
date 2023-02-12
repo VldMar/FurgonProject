@@ -1034,6 +1034,9 @@ section.bread-crumbs a {
 .catalog__item:hover .img {
   background-color: #ededed;
 }
+.catalog__item:hover .img img {
+  filter: invert(1);
+}
 
 /***** Корзина ******/
 .cart {
