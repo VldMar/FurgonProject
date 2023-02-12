@@ -1426,6 +1426,9 @@ select {
   .side-nav__inner {
     width: 0;
   }
+  .header__bottom #category-item {
+    display: block;
+  }
 }
 @media (max-width: 1200px) {
   .header__top .social {
@@ -1486,7 +1489,6 @@ select {
     font-size: 18px;
   }
   .header__bottom #category-item {
-    display: block;
     order: -1;
   }
   .header__bottom #category {

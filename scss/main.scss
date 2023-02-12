@@ -1554,6 +1554,9 @@ select {
             width: 0;
         }
     }
+    .header__bottom #category-item {
+        display: block;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -1632,7 +1635,6 @@ select {
             }
 
             #category-item {
-                display: block;
                 order: -1;
             }
 
