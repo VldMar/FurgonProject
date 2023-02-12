@@ -460,7 +460,6 @@ main {
         height: 100%;
         width: 50px;
         background-color: $link-color;
-        overflow: auto;
     }
 
     &__link {
@@ -891,6 +890,10 @@ footer {
     font-weight: 900;
     position: relative;
 
+    .top{
+        padding-bottom: 2px;
+    }
+
     .footer__col {
         width: 50%;
     }
@@ -949,13 +952,6 @@ footer {
 
     #map {
         background-color: #cecece;
-
-
-
-        img {
-            height: 100%;
-            width: 100%;
-        }
     }
 }
 
@@ -1552,6 +1548,7 @@ select {
 
         &__inner {
             width: 0;
+            overflow-y: auto;
         }
     }
     .header__bottom #category-item {
@@ -1709,7 +1706,7 @@ select {
         }
 
         #map {
-            max-height: 250px;
+            height: 300px;
         }
 
         .bottom__inner {

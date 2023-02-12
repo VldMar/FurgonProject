@@ -522,7 +522,6 @@ main {
   height: 100%;
   width: 50px;
   background-color: #1f2a3a;
-  overflow: auto;
 }
 .side-nav__link {
   margin-top: 10px;
@@ -884,6 +883,9 @@ footer {
   font-weight: 900;
   position: relative;
 }
+footer .top {
+  padding-bottom: 2px;
+}
 footer .footer__col {
   width: 50%;
 }
@@ -931,10 +933,6 @@ footer .bottom a:hover {
 }
 footer #map {
   background-color: #cecece;
-}
-footer #map img {
-  height: 100%;
-  width: 100%;
 }
 
 /***** Контентная часть ******/
@@ -1425,6 +1423,7 @@ select {
   }
   .side-nav__inner {
     width: 0;
+    overflow-y: auto;
   }
   .header__bottom #category-item {
     display: block;
@@ -1544,7 +1543,7 @@ select {
     justify-content: space-around;
   }
   footer #map {
-    max-height: 250px;
+    height: 300px;
   }
   footer .bottom__inner {
     width: 100%;
