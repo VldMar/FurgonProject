@@ -1889,11 +1889,6 @@ select {
         }
     }
 
-    .clear {
-        width: 22px;
-        height: 22px;
-        font-size: 10px;
-    }
 
     /*** CATALOG ***/
     .catalog {
@@ -2179,7 +2174,7 @@ select {
         margin-bottom: 15px;
         box-shadow: 0 0 8px rgb(0 0 0 / 20%);
         height: 370px;
-        padding-bottom: 15px;
+        padding: 15px 0;
     }
 
     /*** ORDER ***/
