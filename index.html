@@ -11,7 +11,25 @@
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body>   
+    <div class="modal">
+        <div class="modal__inner">
+            <button class="modal__close">
+                X
+            </button>
+            <span class="modal__title">
+                Ваш товар в корзине!
+            </span>
+            <div class="modal__buttons">
+                <button class="btn modal__button left">
+                    Продолжить покупки
+                </button>
+                <button class="btn modal__button">
+                    Перейти в корзину
+                </button>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="header__top">
             <div class="container">
@@ -19,18 +37,18 @@
                     <span></span>
                 </button>
                 <a href="" class="logo">
-                    <img src="img/logo.png" alt="logo">
+                    <img src="img/logo.png" alt="logo-img">
                 </a>
                 
                 <div class="icon-item">
-                    <img src="img/icons/time-png.png" alt="" class="icon">
+                    <img src="img/icons/time-png.png" alt="time-png.png" class="icon">
                     <div class="info">
                         <p>Режим работы:</a>
                         <p>С 8.00 до 18.00</p>
                     </div>
                 </div>
                 <div class="icon-item">
-                    <img src="img/icons/location-png.png" alt="" class="icon">
+                    <img src="img/icons/location-png.png" alt="location-png.png" class="icon">
                     <div class="info">
                         <a href="" class="link">
                             <span>г. Нижний Новгород</span>
@@ -38,10 +56,10 @@
                     </div>
                 </div>
                 <div class="icon-item">
-                    <img src="img/icons/tel-png.png" alt="" class="icon">
+                    <img src="img/icons/tel-png.png" alt="tel-png.png" class="icon">
                     <div class="info">
-                        <a href="" class="link">+7 831 414-44-11</a>
-                        <a href="" class="link">+7 903 602-44-11</a>
+                        <a href="tel:+78314144411" class="link">+7 831 414-44-11</a>
+                        <a href="tel:+79036024411" class="link">+7 903 602-44-11</a>
                     </div>
                 </div>
                 <div class="social">
@@ -52,10 +70,10 @@
                 <div class="shop-card">
                     <div class="shop-card__info">
                         <p>Заказ: <span>154 000 p.</span></p>
-                        <a href="" class="shop-card__link link">Купить</a>
-                        <a href="" class="shop-card__link to-card">В корзину</a>
+                        <a href="order.html" class="shop-card__link link">Купить</a>
+                        <a href="cart.html" class="shop-card__link to-card">В корзину</a>
                     </div>
-                    <a href="" class="shop-card__icon">
+                    <a href="cart.html" class="shop-card__icon">
                         <img src="img/icons/shop-card.png" alt="shop-card-icon">
                     </a>
                 </div>
@@ -66,9 +84,10 @@
                 <nav class="nav">
                     <ul>
                         <li><a class="nav__link link" href="">О компании</a></li>
-                        <li id="catalog-item"><a class="nav__link link" href="" id="catalog">Каталог</a></li>
-                        <li><a class="nav__link link" href="">Спецпредложения</a></li>
-                        <li><a class="nav__link link" href="">Доставка и оплата</a></li>
+                        <li><a class="nav__link link" href="catalog.html">Каталог</a></li>
+                        <li id="category-item"><a class="nav__link link" href="" id="category">Категории товаров</a></li>
+                        <li><a class="nav__link link" href="order.html">Спецпредложения</a></li>
+                        <li><a class="nav__link link" href="product-page.html">Доставка и оплата</a></li>
                         <li><a class="nav__link link" href="">Новости</a></li>
                         <li><a class="nav__link link" href="">Отзывы</a></li>
                         <li><a class="nav__link link" href="">Контакты</a></li>
@@ -79,14 +98,14 @@
             <div class="contacts">
                 <div class="container contacts__inner">
                     <div class="icon-item contacts__item">
-                        <img src="img/icons/time-png.png" alt="" class="icon">
+                        <img src="img/icons/time-png.png" alt="time-png" class="icon">
                         <div class="info">
                             <p>Режим работы:</a>
                             <p>С 8.00 до 18.00</p>
                         </div>
                     </div>
                     <div class="icon-item contacts__item">
-                        <img src="img/icons/location-png.png" alt="" class="icon">
+                        <img src="img/icons/location-png.png" alt="location-png" class="icon">
                         <div class="info">
                             <a href="" class="link">
                                 <span>г. Нижний Новгород</span>
@@ -94,7 +113,7 @@
                         </div>
                     </div>
                     <div class="icon-item contacts__item">
-                        <img src="img/icons/tel-png.png" alt="" class="icon">
+                        <img src="img/icons/tel-png.png" alt="tel-png" class="icon">
                         <div class="info">
                             <a href="" class="link">+7 831 414-44-11</a>
                             <a href="" class="link">+7 903 602-44-11</a>
@@ -108,7 +127,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> 
     <main>    
         <div class="side-nav">
             <div class="side-nav__inner">
@@ -116,93 +135,105 @@
                     <span></span>
                 </button>
                 <a class="side-nav__link" href="">
-                    <img src="img/icons/left-icon-1.png" alt="">
+                    <img src="img/icons/left-icon-1.png" alt="side-nav-link-1">
                     <div class="text">
                         <span>Климатическое</span>
                         <span>и вентиляционное оборудование</span>
                     </div>
                 </a>
                 <a class="side-nav__link" href="">
-                    <img src="img/icons/left-icon-2.png" alt="">
+                    <img src="img/icons/left-icon-2.png" alt="side-nav-link-2">
                     <div class="text">
                         <span>Сиденья и комплектующие</span>
                     </div>
                 </a>
                 <a class="side-nav__link" href="">
-                    <img src="img/icons/left-icon-3.png" alt="">
+                    <img src="img/icons/left-icon-3.png" alt="side-nav-link-3">
                     <div class="text">
                         <span>Детали салона</span>
                     </div>
                 </a>
                 <a class="side-nav__link" href="">
-                    <img src="img/icons/left-icon-4.png" alt="">
+                    <img src="img/icons/left-icon-4.png" alt="side-nav-link-4">
                     <div class="text">
                         <span>Остекление микроавтобусов</span>
                     </div>
                 </a>
                 <a class="side-nav__link" href="">
-                    <img src="img/icons/left-icon-5.png" alt="">
+                    <img src="img/icons/left-icon-5.png" alt="side-nav-link-5">
                     <div class="text">
                         <span>Внешние устройства</span>
                     </div>
                 </a>
                 <a class="side-nav__link" href="">
-                    <img src="img/icons/left-icon-6.png" alt="">
+                    <img src="img/icons/left-icon-6.png" alt="side-nav-link-6">
                     <div class="text">
                         <span>Комплектующие для кондиционеров</span>
                         <span>и рефрижираторов</span>
                     </div>
                 </a>
                 <a class="side-nav__link" href="">
-                    <img src="img/icons/left-icon-7.png" alt="">
+                    <img src="img/icons/left-icon-7.png" alt="side-nav-link-7">
                     <div class="text">
                         <span>Элементы крепления</span>
                     </div>
                 </a>
                 <a class="side-nav__link" href="">
-                    <img src="img/icons/left-icon-8.png" alt="">
+                    <img src="img/icons/left-icon-8.png" alt="side-nav-link-8">
                     <div class="text">
                         <span>Комплектующие для сидений</span>
                     </div>
                 </a>
                 <a class="side-nav__link" href="">
-                    <img src="img/icons/left-icon-9.png" alt="">
+                    <img src="img/icons/left-icon-9.png" alt="side-nav-link-9">
                     <div class="text">
                         <span>Детали экстерьера</span>
                     </div>
                 </a>
                 <a class="side-nav__link" href="">
-                    <img src="img/icons/left-icon-10.png" alt="">
+                    <img src="img/icons/left-icon-10.png" alt="side-nav-link-10">
                     <div class="text">
                         <span>Изоляционные материалы</span>
                     </div>
                 </a>
                 <a class="side-nav__link" href="">
-                    <img src="img/icons/left-icon-11.png" alt="">
+                    <img src="img/icons/left-icon-11.png" alt="side-nav-link-11">
                     <div class="text">
                         <span>Линолеум и AL профиль</span>
                     </div>
                 </a>
                 <a class="side-nav__link" href="">
-                    <img src="img/icons/left-icon-12.png" alt="">
+                    <img src="img/icons/left-icon-12.png" alt="side-nav-link-12">
                     <div class="text">
                         <span>Заглушки, пистоны</span>
                     </div>
                 </a>
                 <a class="side-nav__link" href="">
-                    <img src="img/icons/left-icon-13.png" alt="">
+                    <img src="img/icons/left-icon-13.png" alt="side-nav-link-13">
                     <div class="text">
                         <span>Поручни</span>
                     </div>
                 </a>
                 <a class="side-nav__link" href="">
-                    <img src="img/icons/left-icon-14.png" alt="">
+                    <img src="img/icons/left-icon-14.png" alt="side-nav-link-14">
                     <div class="text">
                         <span>Багажные полки</span>
                     </div>
                 </a>
             </div>
         
+        </div>
+        <div class="modal-cart">
+            <div class="modal-cart__inner">
+                <div class="modal-cart__info">
+                    <p>Заказ: <span>154 000 p.</span></p>
+                    <a href="" class="modal-cart__link link">Купить</a>
+                    <a href="" class="modal-cart__link to-cart">В корзину</a>
+                </div>
+                <a href="" class="modal-cart__icon">
+                    <img src="img/icons/shop-card.png" alt="shop-cart-icon">
+                </a>
+            </div>
         </div>
         <section class="intro">
             <div class="container intro__inner">
@@ -825,7 +856,7 @@
                     <span class="div"></span>
                     <div class="item contacts">                        
                         <div class="icon-item">
-                            <img src="img/icons/location-png.png" alt="" class="icon">
+                            <img src="img/icons/location-png.png" alt="location-png" class="icon">
                             <div class="info">
                                 <a href="" class="link">
                                     <span>г. Нижний Новгород</span>
@@ -833,14 +864,14 @@
                             </div>
                         </div>
                         <div class="icon-item">
-                            <img src="img/icons/tel-png.png" alt="" class="icon">
+                            <img src="img/icons/tel-png.png" alt="tel-png" class="icon">
                             <div class="info">
-                                <a href="" class="link">+7 831 414-44-11</a>         
-                                <a href="" class="link">+7 903 602-44-11</a>                         
+                                <a href="tel:+78314144411" class="link">+7 831 414-44-11</a>
+                                <a href="tel:+79036024411" class="link">+7 903 602-44-11</a>
                             </div>
                         </div>
                         <div class="icon-item">
-                            <img src="img/icons/time-png.png" alt="" class="icon">
+                            <img src="img/icons/time-png.png" alt="time-png" class="icon">
                             <div class="info">
                                 <p>Режим работы:</a>         
                                 <p>С 8.00 до 18.00</p>                         

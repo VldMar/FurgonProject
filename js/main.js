@@ -1,8 +1,15 @@
 $(document).ready(function () {
+  InitModal();
   InitBurgers();
   InitSideNavigation();
   InitOwlCarousel();
 });
+
+function InitModal(){
+  $('.modal__close').click(function(){
+    $('.modal').removeClass('active');
+  });
+}
 
 function InitBurgers() {
   $("#mobile-burger").click(function () {
@@ -23,7 +30,7 @@ function InitSideNavigation() {
   $(".side-nav__inner").mouseenter(openSideNav);
   $(".side-nav__inner").mouseleave(closeSideNav);
 
-  $("#catalog").click(function (e) {
+  $("#category").click(function (e) {
     e.preventDefault();
     toggleSideNav();
   });
