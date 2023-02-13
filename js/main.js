@@ -5,20 +5,20 @@ $(document).ready(function () {
   InitOwlCarousel();
 });
 
-function InitModal(){
-  $('.modal__close').click(function(){
-    $('.modal').removeClass('active');
+function InitModal() {
+  $(".modal__close").click(function () {
+    $(".modal").removeClass("active");
   });
 }
 
 function InitBurgers() {
   $("#mobile-burger").click(function () {
-    $("#mobile-burger").toggleClass('close')
-    $(".header__bottom").toggleClass("open");
-
     let body = $("body");
     if (body.attr("style") === "overflow: hidden;") body.removeAttr("style");
     else $("body").css("overflow", "hidden");
+
+    $("#mobile-burger").toggleClass("close");
+    $(".header__bottom").toggleClass("open");
   });
 }
 
@@ -52,7 +52,7 @@ function InitOwlCarousel() {
       576: {
         items: 2,
       },
-     /* 768: {
+      /* 768: {
         items: 2,
       },*/
       992: {

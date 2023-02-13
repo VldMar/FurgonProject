@@ -207,14 +207,17 @@
         
         </div>
 
-        <section class="bread-crumbs">
+        <section class="breadscrumbs">
             <div class="container">
-                <nav>
-                    <a href="">Главная</a>
-                    <a href="">Каталог товаров</a>
-                    <a href="">Люки и вентиляторы</a>
-                    <a href="">Накрышный вентилятор</a>
-                </nav>
+                <ul class="breadscrumbs">
+                    <li><a href="">Главная</a></li>
+                    <span class="separator">/</span>
+                    <li><a href="">Каталог товаров</a></li>
+                    <span class="separator">/</span>
+                    <li><a href="">Люки и вентиляторы</a></li>
+                    <span class="separator">/</span>
+                    <li><a href="">Накрышный вентилятор</a></li>
+                </ul>
             </div>
         </section>
 
@@ -226,15 +229,11 @@
                             <div class="img gallery__main">
                                 <img src="img/product/main.jpg" alt="">
                             </div>
-                            <div class="img">
+                            <div class="thumbnails">
                                 <img src="img/product/thumb-1.jpg" alt="">
-                            </div>
-                            <div class="img">
                                 <img src="img/product/thumb-2.jpg" alt="">
-                            </div>
-                            <div class="img">
                                 <img src="img/product/thumb-1.jpg" alt="">
-                            </div>
+                            </div>                            
                         </div>
 
                         <div class="text">
@@ -260,46 +259,60 @@
                             </h2>
                             <div class="settings">
                                 <div class="item">
-                                    <span class="prop">Материал</span>
-                                    <select name="" class="selection">
-                                        <option value="">Литой пластик</option>
-                                        <option value="">Нелитой пластик</option>
-                                    </select>
+                                    <span class="prop">Материал:</span>
+                                    <div class="select-wrapper">
+                                        <select name="" class="selection">
+                                            <option value="">Литой пластик</option>
+                                            <option value="">Нелитой пластик</option>
+                                        </select>
+                                    </div>
+                                   
                                 </div>
                                 <div class="item">
-                                    <span class="prop">В</span>
-                                    <select name="" class="selection">
-                                        <option value="">388 мм</option>
-                                        <option value="">Нелитой пластик</option>
-                                    </select>
+                                    <span class="prop">В:</span>
+                                    <div class="select-wrapper">
+                                        <select name="" class="selection">
+                                            <option value="">388 мм</option>
+                                            <option value="">Нелитой пластик</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="item">
-                                    <span class="prop">Ш</span>
-                                    <select name="" class="selection">
-                                        <option value="">320 мм</option>
-                                        <option value="">Нелитой пластик</option>
-                                    </select>
+                                    <span class="prop">Ш:</span>
+                                    <div class="select-wrapper">
+                                        <select name="" class="selection">
+                                            <option value="">320 мм</option>
+                                            <option value="">Нелитой пластик</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="item">
-                                    <span class="prop">Г</span>
-                                    <select name="" class="selection">
-                                        <option value="">75 мм</option>
-                                        <option value="">Нелитой пластик</option>
-                                    </select>
+                                    <span class="prop">Г:</span>
+                                    <div class="select-wrapper">
+                                        <select name="" class="selection">
+                                            <option value="">75 мм</option>
+                                            <option value="">Нелитой пластик</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="item">
-                                    <span class="prop">Цвет</span>
-                                    <select name="" class="selection">
-                                        <option value="">Синий</option>
-                                        <option value="">Красный</option>
-                                    </select>
+                                    <span class="prop">Цвет:</span>
+                                    <div class="select-wrapper">
+                                        <select name="" class="selection">
+                                            <option value="">Синий</option>
+                                            <option value="">Красный</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="item">
-                                    <span class="prop">Производство</span>
-                                    <select name="" class="selection">
-                                        <option value="">Россия</option>
-                                        <option value="">Турция</option>
-                                    </select>
+                                    <span class="prop">Производство:</span>
+                                    <div class="select-wrapper">
+                                        <select name="" class="selection">
+                                            <option value="">Россия</option>
+                                            <option value="">Турция</option>
+                                        </select>
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="product__sum">
@@ -587,8 +600,8 @@
                         <div class="icon-item">
                             <img src="img/icons/tel-png.png" alt="tel-png" class="icon">
                             <div class="info">
-                                <a href="" class="link">+7 831 414-44-11</a>         
-                                <a href="" class="link">+7 903 602-44-11</a>                         
+                                <a href="tel:+78314144411" class="link">+7 831 414-44-11</a>
+                                <a href="tel:+79036024411" class="link">+7 903 602-44-11</a>
                             </div>
                         </div>
                         <div class="icon-item">
@@ -605,12 +618,11 @@
                         <a href=""><img src="img/icons/viber.png" alt="viber-icon"></a>                    
                         <a href=""><img src="img/icons/telegram.png" alt="telegram-icon"></a>                    
                     </div>
-                </div>
-                <div class="footer__col" id="map">
-                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A104576f591d4d80f6ebbc530ea8b1776522dc0081950fff5b1bf06b1a86ddb2e&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
-                </div>
-                
-            </div>  
+                </div>                
+            </div>              
+            <div class="footer__col" id="map">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A104576f591d4d80f6ebbc530ea8b1776522dc0081950fff5b1bf06b1a86ddb2e&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+            </div>
         </div>
         <div class="bottom">
             <div class="container">
