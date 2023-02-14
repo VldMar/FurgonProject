@@ -981,7 +981,7 @@ footer {
     .title {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
         flex-wrap: wrap;
         margin-bottom: 12px;
 
@@ -1651,7 +1651,7 @@ section.breadscrumbs {
         width: 155px;
         height: 40px;
         font-size: 12px;
-        padding-top: 10px;
+        line-height: 40px;
     }
 
     input[type=file] {

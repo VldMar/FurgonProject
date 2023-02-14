@@ -960,7 +960,7 @@ footer #map {
 .content-header .title {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   flex-wrap: wrap;
   margin-bottom: 12px;
 }
@@ -1522,7 +1522,7 @@ section.breadscrumbs a {
   width: 155px;
   height: 40px;
   font-size: 12px;
-  padding-top: 10px;
+  line-height: 40px;
 }
 .input-file input[type=file] {
   position: absolute;
