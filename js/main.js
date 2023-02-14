@@ -3,6 +3,8 @@ $(document).ready(function () {
   InitBurgers();
   InitSideNavigation();
   InitOwlCarousel();
+  InitGallerySlider();
+  InitLightBox();
 });
 
 function InitModal() {
@@ -63,4 +65,38 @@ function InitOwlCarousel() {
       },
     },
   });
+}
+
+function InitGallerySlider() {
+  let inner = $(".thumbnails__inner");
+  let thumbItems = $(".thumbnails__inner .item");
+  let mainItems = $(".gallery__main .item");
+  let activeThumbItem = thumbItems[0];
+  let activeMainItem = mainItems[0];
+  //let lightBox = $('.gallery-main-lightbox').simpleLightbox(); 
+
+  const setItemActive = (item) => {
+    // следующий элемент делаем активным
+    $(activeThumbItem).removeClass('active');
+    activeThumbItem = item;
+    $(activeThumbItem).addClass('active');
+
+    let index = thumbItems.index(item);
+
+    $(activeMainItem).removeClass('active');
+    activeMainItem = mainItems[index];
+    $(activeMainItem).addClass('active');
+  };
+
+
+  $('.thumbnails__inner .item').on('mouseenter click',function(){
+    setItemActive($(this));
+  });
+}
+
+function InitLightBox(){
+  let lightBoxItems =  $('.gallery__main .item');
+  if(lightBoxItems.length == 0)
+    return;
+  $(lightBoxItems).simpleLightbox();
 }

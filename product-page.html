@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/simpleLighbox.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -227,12 +228,40 @@
                     <div class="product__description">
                         <div class="gallery">
                             <div class="img gallery__main">
-                                <img src="img/product/main.jpg" alt="">
+                                <a href="img/product/main.jpg" class="item active" data-lightbox="example-1">
+                                    <img src="img/product/main.jpg" alt="">
+                                </a>     
+                                <a href="img/product/thumb-2.jpg" class="item" data-lightbox="example-1">
+                                    <img src="img/product/thumb-2.jpg" alt="">
+                                </a>  
+                                <a href="img/product/thumb-1.jpg" class="item" data-lightbox="example-1">
+                                    <img src="img/product/thumb-1.jpg" alt="">
+                                </a>  
+                                <a href="img/product/thumb-2.jpg" class="item" data-lightbox="example-1">
+                                    <img src="img/product/thumb-2.jpg" alt="">
+                                </a>  
+                                <a href="img/product/thumb-1.jpg" class="item" data-lightbox="example-1">
+                                    <img src="img/product/thumb-1.jpg" alt="">
+                                </a>                             
                             </div>
                             <div class="thumbnails">
-                                <img src="img/product/thumb-1.jpg" alt="">
-                                <img src="img/product/thumb-2.jpg" alt="">
-                                <img src="img/product/thumb-1.jpg" alt="">
+                                <div class="thumbnails__inner">
+                                    <div class="item active">
+                                        <img src="img/product/thumb-1.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/product/thumb-2.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/product/thumb-1.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/product/thumb-2.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="img/product/thumb-1.jpg" alt="">
+                                    </div>
+                                </div>
                             </div>                            
                         </div>
 
@@ -638,6 +667,7 @@
 
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/simpleLightbox.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
