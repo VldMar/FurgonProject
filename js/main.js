@@ -5,6 +5,7 @@ $(document).ready(function () {
   InitOwlCarousel();
   InitGallerySlider();
   InitLightBox();
+  InitSlick();
 });
 
 function InitModal() {
@@ -89,9 +90,41 @@ function InitGallerySlider() {
   };
 
 
-  $('.thumbnails__inner .item').on('mouseenter click',function(){
+  $('.thumbnails__inner .item').on('click',function(){
     setItemActive($(this));
   });
+}
+
+function InitSlick(){
+  let isMobile = $(window).innerWidth() < 577;
+  let isVertical = isMobile ? false : true;
+
+  let slickOptions = {
+    vertical: isVertical,
+    verticalSwiping: isVertical,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    draggable:true,
+    dots: true,
+    infinite: false,
+    speed: 200,
+    centerMode:true,
+    focusOnSelect: true,
+    centerPadding: 0
+  };
+
+  let slider = $('.thumbnails__inner');
+  slider.slick(slickOptions);
+
+  // костыль для скрола мышкой
+  slider.on('wheel', (function(e) {
+    e.preventDefault();
+    if (e.originalEvent.deltaY < 0) {
+      $(this).slick('slickPrev');
+    } else {
+      $(this).slick('slickNext');
+    }
+  }));
 }
 
 function InitLightBox(){
